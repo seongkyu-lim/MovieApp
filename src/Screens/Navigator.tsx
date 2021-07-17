@@ -1,8 +1,11 @@
 import {
 	createSwitchNavigator,
-	createStackNavigator,
 	createAppContainer,
-} from 'react-navigation'
+} from 'react-navigation';
+
+import {
+	createStackNavigator
+} from 'react-navigation-stack';
 
 import CheckLogin from '~/Screens/CheckLogin';
 import Login from '~/Screens/Login';
@@ -29,3 +32,4 @@ const AppNavigator = createSwitchNavigator({
 );
 
 export default createAppContainer(AppNavigator);
+
